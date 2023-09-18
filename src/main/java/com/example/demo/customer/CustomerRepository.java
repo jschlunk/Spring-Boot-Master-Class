@@ -6,9 +6,9 @@ import java.util.List;
 public class CustomerRepository implements CustomerRepo {
 
     @Override
-    public List<Customer> getCustomer() {
+    public List<Customer> getCustomers() {
         return Collections.singletonList(
-                new Customer(1L, "TODO DB", "todo"));
+                new Customer(1L, "TODO DB", "todo", "person@gmail.com"));
 
     }
 

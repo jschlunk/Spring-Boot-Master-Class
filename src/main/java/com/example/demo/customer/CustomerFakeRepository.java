@@ -6,10 +6,10 @@ import java.util.List;
 public class CustomerFakeRepository implements CustomerRepo {
 
     @Override
-    public List<Customer> getCustomer() {
+    public List<Customer> getCustomers() {
         return Arrays.asList(
-                new Customer(1L, "James Bond", "password123"),
-                new Customer(2L, "Jamila Ahmed", "password234"));
+                new Customer(1L, "James Bond", "password123", "person@gmail.com"),
+                new Customer(2L, "Jamila Ahmed", "password234", "person@gmail.com"));
     }
 
 }
