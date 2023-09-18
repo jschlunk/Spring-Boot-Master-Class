@@ -1,2 +1,2 @@
 app:
-  useFakeCustomerRepo: true
+  useFakeCustomerRepo: false
