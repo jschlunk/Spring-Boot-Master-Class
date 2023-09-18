@@ -8,7 +8,7 @@ public class CustomerRepository implements CustomerRepo {
     @Override
     public List<Customer> getCustomer() {
         return Collections.singletonList(
-                new Customer(1L, "TODO DB"));
+                new Customer(1L, "TODO DB", "todo"));
 
     }
 
