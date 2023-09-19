@@ -21,7 +21,7 @@ public class CustomerConfiguration {
     @Bean
     CustomerRepo customerRepo() {
         System.out.println("useFakeCustomerRepo=" + useFakeCustomerRepo);
-        return useFakeCustomerRepo ? new CustomerFakeRepository() : new CustomerRepository(); // Wie eine if-Abfrage
+        return new CustomerFakeRepository();
     }
 
 }
