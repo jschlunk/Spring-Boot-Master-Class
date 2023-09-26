@@ -72,6 +72,19 @@
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-registry-prometheus</artifactId>
 		</dependency>
+
+		<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version> <!-- Aktuelle Version von Lombok hier einfügen -->
+            <scope>provided</scope> <!-- Du kannst "provided" verwenden, da Lombok zur Kompilierzeit benötigt wird, aber nicht zur Laufzeit -->
+        </dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
 		
 
 	</dependencies>
