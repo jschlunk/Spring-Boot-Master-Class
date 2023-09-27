@@ -12,17 +12,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
 
 @RequestMapping(path = "api/v2/customers")
 @RestController
+@AllArgsConstructor
 public class CustomerControllerV2 {
 
     private final CustomerService customerService;
-
-    @Autowired
-    public CustomerControllerV2(CustomerService customerService) {
-        this.customerService = customerService;
-    }
 
     @GetMapping
     List<Customer> getCustomers() {
